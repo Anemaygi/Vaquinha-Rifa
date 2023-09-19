@@ -24,7 +24,7 @@ function Rifa() {
       </svg>
       <div className="text-center text-primary">
         <h1 className="uppercase text-5xl font-black mb-3">Rifa</h1>
-        <p> Gostaria de ganhar uma cesta de páscoa e colaborar com nosso objetivo? <br /> </p>
+        <p> Gostaria de ganhar um prêmio e colaborar com nosso objetivo? <br /> </p>
         <p> Participe da rifa! Cada número é R$5,00 :) Basta clicar no número que deseja escolher!</p>
       </div>
 
@@ -33,11 +33,12 @@ function Rifa() {
         {Array.from({ length: max - min + 1 }, (_, index) => {
           const number = index + min;
           const isIndisponivel = jsonData.indisponivel.includes(number);
+          
           return (
             <a
               className={`number ${isIndisponivel ?
-                'text-white bg-secondary flex items-center justify-center p-6 w-6 h-6 m-4 rounded-full'
-                : 'text-white bg-primary flex items-center justify-center p-6 w-6 h-6 m-4 rounded-full'}`}
+                'text-white shadow-number bg-secondary flex items-center justify-center p-6 w-6 h-6 m-4 rounded-full pointer-events-none'
+                : 'text-white shadow-md bg-primary flex items-center justify-center p-6 w-6 h-6 m-4 rounded-full hover:shadow-focus hover:scale-105 transition-all'}`}
               href={`https://wa.me/${celular}?text=Quero%20o%20número%20${number}%20da%20rifa.%20Vim%20pelo%20site`}
               target="_blank"
             >
