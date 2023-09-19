@@ -8,11 +8,11 @@ function Main() {
         <img src="src/assets/mainVaquinha.png" className="w-fit"/>
       </div>
       <div className="basis-1/2 text-white space-y-3 flex flex-col justify-center">
-        <h1 className="title font-black text-display text-6xl uppercase drop-shadow-3xl">VAQUINHA</h1>
-        <h3 className="title font-black text-lg"> Rifa </h3>
+        <h1 className="font-black text-display text-6xl uppercase drop-shadow-3xl">VAQUINHA</h1>
+        <h3 className="font-black text-lg"> Rifa </h3>
         <p> A fim de levantar R$5.000,00 para <b>determinada causa</b>, estamos fazendo uma rifa </p>
        <p> Qualquer ajuda é válida!</p>
-      <div className="flex flex-wrap"><PrimaryButton href="#rifa" name="Colabore"/> <SecondaryButton href="#entenda" name="Entenda"/></div>
+      <div className="flex flex-wrap"><PrimaryButton href="#" name="Colabore"/> <SecondaryButton href="#" name="Entenda"/></div>
       </div>
     </div>
   )

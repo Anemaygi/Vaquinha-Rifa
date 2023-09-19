@@ -1,8 +1,17 @@
+
+import Main from "./components/main";
+import Entenda from "./components/entenda";
+import Rifa from "./components/rifa";
+import Footer from "./components/footer";
+
 function App() {
   return (
-    <h1 className="text-3xl text-center font-bold underline">
-      Hello world!
-    </h1>
+    <body class="bg-primary flex-none" >
+    <Main/>
+    <Entenda id="entenda" />
+    <Rifa id="rifa" />
+    <Footer />
+    </body>
   )
 }
 
