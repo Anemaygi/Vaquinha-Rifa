@@ -18,9 +18,7 @@ function Entenda() {
         </div>
 
         <div className="basis-1/2">
-          <div className="bg-white p-5 pb-20 mx-40 rotate-[15deg] w-50 hover:rotate-0 transition-all shadow-focus">
-            <img src="src/assets/fotoVaca.png" />
-          </div>
+           <img className="bg-white p-5 pb-20 mx-20 rotate-[15deg] w-2/3 hover:rotate-0 transition-all shadow-focus" src="src/assets/fotoVaca.png" />
 
         </div>
 
